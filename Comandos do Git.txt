@@ -1,0 +1,55 @@
+Para criar começar a realizar os registros do seu
+projeto, basta se deslocar via terminal até o diretório onde os arquivos do projeto estão
+localizados e entrar com o seguinte comando:
+
+git init
+
+O comando da seção anterior irá criar um subdiretório .git contendo o esqueleto
+necessário para o funcionamento do repositório git. Nessa etapa ainda não existe nenhum
+arquivo registrado no repositório. Os arquivos são gravados no diretório .git a partir de
+commits efetuados pelo gerente do diretório quando for desejado.
+9
+Antes de efetuar um commit, é preciso que sejam especificados pelo usuário os
+arquivos que serão salvos ou consolidados (arquivos presentes em um commit), usando o
+comando:
+git add oimundo.c
+O comando acima especifica que o arquivo example.c irá ser usado em um commit
+posterior. Com o arquivo oimundo.c na lista de arquivos que serão consolidados e, sendo
+apenas ele necessário na mesma lista, só é preciso efetuar um commit com o comando:
+
+git commit -m "alguma mensagem"
+
+A diretiva -m é necessária para associar mensagem sobre o commit e usa a próxima
+entrada entre aspas como a mensagem do commit.
+Agora você possui um diretório .git com um commit de um arquivo que você deseja
+monitorar. Com isso, é recomendado que, a cada mudança significativa no arquivo, todo o
+processo de commit seja refeito para que as mudanças no arquivo sejam registradas no
+diretório .git.
+É importante lembrar que os arquivos presentes no diretório podem estar em dois
+estados distintos: monitorado ou não monitorado. Os arquivos monitorados são os arquivos
+presentes no último commit, podendo estar inalterados, modificados ou selecionados para
+um outro commit. Os arquivos não monitorados são os que não foram consolidados e
+também não estão presentes em nenhuma seleção pré commit.
+Para saber o status dos arquivos, é só usar o comando:
+
+git status
+
+O comando status tem como saída o estado em que se encontra cada arquivo
+modificado. Você pode efetuar o comando para um arquivo específico da seguinte maneira:
+git status example.c
+É possível observar as mudanças feitas em arquivos monitorados modificados
+através do comando:
+
+git diff
+
+Para remover arquivos presentes no seu repositório .git, é preciso removê-lo não só
+do diretório em que ele se encontra, mas também é removê-lo da área de seleção e então
+efetuar o commit, para isso é só usar o comando:
+
+git rm “arquivo destino”
+
+Quando o seu trabalho está pronto e já lhe é de interesse enviar os arquivos
+modificados ao remoto do projeto, usa-se o comando “push” para efetuar a tarefa. É
+possível enviar o arquivo para o remoto de origem ou para um remoto em específico.
+
+git push origin master

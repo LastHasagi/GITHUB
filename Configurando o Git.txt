@@ -1,0 +1,44 @@
+Uma vez que o Git esteja instalado no seu sistema, é necessário uma configuração
+prévia antes de começar a utilizar o software produtivamente.
+O git config é a ferramenta do Git usada para configurações. Através dela você pode
+alterar configurações pré-definidas no momento em que desejar e toda configuração que
+você fizer será mantida através das atualizações.
+As configurações podem ser mantidas em três arquivos e que são:
+● /etc/config: Nesse arquivo, estão as configurações pertinentes a todos os
+usuários do sistema.
+● ~/.gitconfig: Configuração específica de cada usuário.
+● .git/config: Configuração de cada diretório git.
+As três configurações podem existir, porém apenas uma estará em vigor. O arquivo
+de configuração mais próximo do diretório .git sempre sobrescreve a configuração do git
+mais genérica, ou seja, caso exista um arquivo de configuração presente no diretório .git, tal
+arquivo terá prioridade sobre o arquivo de configuração presente em /etc/gitconfig.
+7
+Agora podemos identificar seu nome de usuário e e-mail para o git. Essas
+informações são importantes, pois cada commit efetuado por um usuário utiliza esses
+dados. Os comandos são os seguintes:
+git config --global user.name “fulano”
+git config --global user.email fulano@email.com
+
+A diretiva --global é responsável por registrar as informações no ~/.gitconfig. Se você
+desejar que essas informações sejam diferentes para projetos específicos, é necessário
+apenas digitar o mesmo comando sem a diretiva --global no diretório em que foi criado um
+projeto .Git.
+Para selecionar o editor de texto padrão do Git, como o Nano, por exemplo, é
+necessário entrar com o seguinte comando:
+git config --global core.editor nano
+Para definir a seleção de ferramenta de Diff padrão, o comando é o seguinte:
+git config --global merge.tool vimdiff
+Ferramentas de Diff são usadas para a solução de conflitos de merge dentro de um
+projeto.
+A diretiva --global é responsável por registrar as informações no ~/.gitconfig. Se você
+desejar que essas informações sejam diferentes para projetos específicos, é necessário
+apenas digitar o mesmo comando sem a diretiva --global no diretório em que foi criado um
+projeto .Git.
+Para selecionar o editor de texto padrão do Git, como o Nano, por exemplo, é
+necessário entrar com o seguinte comando:
+git config --global core.editor nano
+Para definir a seleção de ferramenta de Diff padrão, o comando é o seguinte:
+git config --global merge.tool vimdiff
+Ferramentas de Diff são usadas para a solução de conflitos de merge dentro de um
+projeto.
+
