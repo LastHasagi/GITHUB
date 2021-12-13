@@ -42,3 +42,8 @@ git config --global merge.tool vimdiff
 Ferramentas de Diff são usadas para a solução de conflitos de merge dentro de um
 projeto.
 
+Espero ter ajudado e até a próxima.
+
+
+-Alücard
+contato via discord: Cafu#7475

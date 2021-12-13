@@ -53,3 +53,9 @@ modificados ao remoto do projeto, usa-se o comando “push” para efetuar a tar
 possível enviar o arquivo para o remoto de origem ou para um remoto em específico.
 
 git push origin master
+
+Espero ter ajudado e até a próxima.
+
+
+-Alücard
+contato via discord: Cafu#7475

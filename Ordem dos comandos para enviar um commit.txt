@@ -1,0 +1,14 @@
+Em seu git bash (já na pasta a ser commitada), quando você terminar seu projeto, digite os seguintes comando para enviar seu commit:
+
+git add .
+git commit -m 'digite uma mensagem'
+git push
+
+Assim o seu commit será enviado ao Github ou Bitbucket (depende do local onde está o seu repositório da nuvem).
+E a mensagem a ser digitada no comando git commit -m ' ', pode ser uma mensagem explicando o propósito do seu projeto ou a alteração que foi feita nele ou o que o seu coração mandar.
+
+Espero ter ajudado e até a próxima.
+
+
+-Alücard
+contato via discord: Cafu#7475
