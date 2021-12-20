@@ -1,0 +1,54 @@
+Se você chegou até aqui é porquê já leu todos os outros textos que deixei disponível aqui nesse repositório e deve estar se perguntando "Rodrigo, você me falou sobre os comandos do git, como configurar 
+e como enviar um commit para o github porém você não me ensinou a clonar um repositório.... O que devo fazer ?!" e essa sua pergunta será respondida agora meu 
+jovem (eu tenho 18 anoskkkkkkk mas chamarei vocês de jovem por motivos de simples e puro: EU QUERO ~levem na brincadeira por favor~).
+
+Vamos lá ! 
+Primeiro de tudo você deve ter instalado o git em sua máquina e ter configurado ele direitinho (estarei deixando o link para baixar o git no final desse texto).
+
+O segundo passo é: achar no github o repositório que você deseja clonar e para isso você terá que acessar o github pelo seu navegador e ir até o repositório.
+Chegando lá você terá uma opção em verde com o nome de "Code" e quando clicar nela teremos 3 opções:
+
+*Clone
+*Open with GitHub Desktop
+*Download ZIP
+
+A opção que nos interessa é a de Clone. Nela você terá outras 3 opções:
+
+*HTTPS
+*SSH
+*GitHub CLI
+
+E como esse aqui é um guia rápido, esterei apresentando o modo de clonagem pelo HTTPS. 
+Você selecionará o HTTPS e clicará na opçao no final do link para copiar para o seu atalho (CTRL + V).
+Depois disso usará os seguintes comandos:
+
+*WIN + R
+*digitará: cmd
+
+Assim que entrar no cmd, digite:
+
+*Powershell
+
+Após isso usse o comando "cd x" (substitua "X" pelo caminho do local onde deseja clonar o repositório), por exemplo:
+
+"cd D:\Projetos DIO"
+
+O comando CD te leva para a pasta que você deseja.
+
+Após chegar na pasta desejada através do comando 'cd', ainda no seu powershell digite:
+
+*git clone https://
+
+O HTTPS você colocará o link do github que copiou para sua área de tranferência (aquele mesmo link que você copiou do github).
+
+Depois disso o git irá clonar o repositório para sua pasta e pronto.
+
+Esse foi o guia de como clonar um repositório para sua máquina.
+
+Caso precisem de alguma ajuda, só me chamar no discord
+Cafu#7475
+
+No mais, até a próxima !!
+
+~Alücard
+
